@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre mí — Dökker Mind Studios</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .page-hero{ padding:5.5rem 0 3rem; text-align:center; background:radial-gradient(ellipse 50% 40% at 50% 0%, rgba(255,90,31,.1), transparent 70%); }
+  .timeline{ max-width:760px; margin:0 auto; position:relative; padding-left:2rem; border-left:1px solid rgba(255,90,31,.25); }
+  .t-item{ position:relative; padding-bottom:3rem; }
+  .t-item:last-child{ padding-bottom:0; }
+  .t-item::before{
+    content:''; position:absolute; left:-2.42rem; top:.3rem; width:11px; height:11px; border-radius:50%;
+    background:var(--ember); box-shadow:0 0 10px var(--ember);
+  }
+  .t-item .role{ font-family:var(--mono); font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--ember-hot); }
+  .t-item h3{ font-size:1.15rem; margin:.4rem 0 .6rem; }
+  .t-item p{ color:var(--parchment-d); }
+
+  .quote-block{
+    border-left:3px solid var(--ember); padding:1.5rem 2rem; margin:3rem 0;
+    font-family:var(--body); font-style:italic; font-size:1.2rem; color:var(--parchment);
+    background:linear-gradient(90deg, rgba(255,90,31,.06), transparent);
+  }
+  .skills-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:1.2rem; margin-top:1.5rem; }
+  @media (max-width:640px){ .skills-grid{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <img src="assets/logo.png" alt="Dökker Mind Studios">
+      <span>Dökker Mind<br>Studios</span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="sobre-mi.html" class="active">Sobre mí</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="donacion.html">Donación</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero wrap">
+  <span class="eyebrow">Historia</span>
+  <h1>El arquitecto que quiso<br>forjar mundos</h1>
+  <p style="max-width:600px; margin:1.2rem auto 0; color:var(--parchment-d);">No soy un estudio. Soy una sola persona con dos oficios y un sueño que se niega a apagarse.</p>
+</header>
+
+<div class="seam"></div>
+
+<section class="section">
+  <div class="wrap" style="max-width:760px;">
+    <p style="color:var(--parchment-d);">De día soy arquitecto de nube y programador: diseño sistemas que tienen que sostenerse solos, sin fallar, bajo presión. Es un oficio silencioso, técnico, hecho de diagramas y decisiones invisibles. De noche, ese mismo rigor se convierte en otra cosa — en mundos, en personajes, en un juego que lleva años cociéndose en mi cabeza antes de tocar un teclado.</p>
+
+    <div class="quote-block">
+      "Dökker Mind" nació de esa idea: una mente que es a la vez forja y arquitectura. Un lugar oscuro donde las ideas se templan antes de tomar forma.
+    </div>
+
+    <p style="color:var(--parchment-d);">Fundé Dökker Mind Studios sin inversores, sin equipo y sin red de seguridad, porque quería demostrarme — y demostrarle a la comunidad gamer — que un solo desarrollador con suficiente disciplina puede construir algo a la altura de un estudio grande. No busco atajos ni reconocimiento fácil: busco ganarme un lugar entre los desarrolladores a los que respeto, a base de terminar lo que empiezo.</p>
+  </div>
+</section>
+
+<div class="seam"></div>
+
+<section class="section">
+  <div class="wrap" style="max-width:760px;">
+    <span class="eyebrow">El camino</span>
+    <h2 style="margin-bottom:2.5rem;">Cómo llegué hasta aquí</h2>
+    <div class="timeline">
+      <div class="t-item">
+        <span class="role">Origen</span>
+        <h3>Dos disciplinas, una sola mente</h3>
+        <p>Años diseñando infraestructura en la nube me enseñaron a pensar en sistemas: piezas que deben encajar bajo presión. Ese mismo instinto es el que ahora aplico al diseño de juegos.</p>
+      </div>
+      <div class="t-item">
+        <span class="role">Decisión</span>
+        <h3>Fundar el estudio</h3>
+        <p>Decidí dejar de esperar el "momento perfecto" y abrir Dökker Mind Studios como un estudio unipersonal, sin compromisos con nadie más que con el proyecto mismo.</p>
+      </div>
+      <div class="t-item">
+        <span class="role">Pre-producción</span>
+        <h3>Kara toma forma</h3>
+        <p>Documento de diseño, prólogo narrativo, arte conceptual, los cinco reinos, dirección musical propia vía IA generativa y los primeros cimientos en C++ sobre Unreal Engine 5.</p>
+      </div>
+      <div class="t-item">
+        <span class="role">Ahora</span>
+        <h3>Construyendo en público</h3>
+        <p>Comparto el proceso en abierto — avances, errores, decisiones de diseño — porque la comunidad gamer no solo merece el juego terminado, merece ver el fuego mientras arde.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="seam"></div>
+
+<section class="section section-tight">
+  <div class="wrap" style="max-width:760px;">
+    <span class="eyebrow">El oficio detrás de la forja</span>
+    <h2>Lo que aporto a cada decisión</h2>
+    <div class="skills-grid">
+      <div class="card">
+        <h3 style="font-size:.95rem;">Arquitectura en la nube</h3>
+        <p style="color:var(--parchment-d); font-size:.92rem; margin-top:.6rem;">Diseño de sistemas distribuidos, escalables y resilientes — el mismo pensamiento estructural aplicado a sistemas de juego.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:.95rem;">Programación en C++ / UE5</h3>
+        <p style="color:var(--parchment-d); font-size:.92rem; margin-top:.6rem;">GameMode, clases de personaje y gestión de reinos construidos desde cero, sin frameworks de terceros que oculten el funcionamiento real.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:.95rem;">Diseño narrativo</h3>
+        <p style="color:var(--parchment-d); font-size:.92rem; margin-top:.6rem;">Una historia sobre el duelo, contada reino a reino, donde cada etapa del viaje es también una etapa emocional.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:.95rem;">Dirección de arte y sonido</h3>
+        <p style="color:var(--parchment-d); font-size:.92rem; margin-top:.6rem;">Estética grimdark nórdica coherente, desde el logo hasta los paisajes sonoros ambientales de cada región.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© 2026 Dökker Mind Studios. Forjado en solitario.</span>
+    <span><a href="contacto.html">Contacto</a> · <a href="donacion.html">Donación</a></span>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

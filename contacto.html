@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Dökker Mind Studios</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .page-hero{ padding:5.5rem 0 3rem; text-align:center; background:radial-gradient(ellipse 50% 40% at 50% 0%, rgba(255,90,31,.1), transparent 70%); }
+  .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:start; }
+  @media (max-width:860px){ .contact-grid{ grid-template-columns:1fr; } }
+  .field{ margin-bottom:1.3rem; }
+  .field label{ display:block; font-family:var(--mono); font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--parchment-d); margin-bottom:.5rem; }
+  .field input, .field textarea, .field select{
+    width:100%; background:var(--char); border:1px solid rgba(255,90,31,.2); color:var(--parchment);
+    padding:.8rem 1rem; font-family:var(--body); font-size:.95rem;
+  }
+  .field textarea{ min-height:130px; resize:vertical; }
+  .field input:focus, .field textarea:focus, .field select:focus{ border-color:var(--ember); outline:none; }
+  .form-note{ font-family:var(--mono); font-size:.78rem; color:var(--ember-hot); margin-top:1rem; min-height:1.2rem; }
+  .channel-list{ display:flex; flex-direction:column; gap:1.1rem; }
+  .channel{ display:flex; justify-content:space-between; align-items:center; padding:1.2rem 1.4rem; }
+  .channel b{ font-family:var(--display); font-size:.85rem; letter-spacing:.05em; }
+  .channel span{ font-family:var(--mono); font-size:.75rem; color:var(--parchment-d); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <img src="assets/logo.png" alt="Dökker Mind Studios">
+      <span>Dökker Mind<br>Studios</span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="donacion.html">Donación</a>
+      <a href="contacto.html" class="active">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero wrap">
+  <span class="eyebrow">Hablemos</span>
+  <h1>Llama a la puerta de la forja</h1>
+  <p style="max-width:600px; margin:1.2rem auto 0; color:var(--parchment-d);">Prensa, colaboraciones, feedback o simplemente curiosidad: este es un estudio de una sola persona, así que cada mensaje lo leo yo mismo.</p>
+</header>
+
+<div class="seam"></div>
+
+<section class="section">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow">Mensaje directo</span>
+      <h2 style="margin-bottom:1.5rem; font-size:1.3rem;">Escríbeme</h2>
+      <form data-static-form data-success-message="Mensaje recibido. Te responderé en cuanto pueda salir de la forja.">
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="field">
+          <label for="email">Correo</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="motivo">Motivo</label>
+          <select id="motivo" name="motivo">
+            <option>Prensa / cobertura</option>
+            <option>Colaboración</option>
+            <option>Feedback sobre Kara</option>
+            <option>Reporte de error</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid">Enviar mensaje</button>
+        <p class="form-note" role="status"></p>
+      </form>
+      <p style="font-family:var(--mono); font-size:.72rem; color:var(--ash); margin-top:1rem;">Nota técnica: este formulario es estático. Conéctalo a un servicio gratuito como Formspree o Web3Forms para recibir los envíos por correo.</p>
+    </div>
+
+    <div>
+      <span class="eyebrow">Otros canales</span>
+      <h2 style="margin-bottom:1.5rem; font-size:1.3rem;">Sígueme la pista</h2>
+      <div class="channel-list">
+        <div class="card channel">
+          <b>Correo</b>
+          <span>contacto@dokkermind.dev</span>
+        </div>
+        <div class="card channel">
+          <b>X / Twitter</b>
+          <span>@dokkermindstudios</span>
+        </div>
+        <div class="card channel">
+          <b>YouTube</b>
+          <span>Devlogs de Kara</span>
+        </div>
+        <div class="card channel">
+          <b>Discord</b>
+          <span>Comunidad del taller</span>
+        </div>
+      </div>
+      <p style="font-family:var(--mono); font-size:.72rem; color:var(--ash); margin-top:1.2rem;">Reemplaza estos datos por tus cuentas reales una vez las crees.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© 2026 Dökker Mind Studios. Forjado en solitario.</span>
+    <span><a href="donacion.html">Donación</a> · <a href="proyectos.html">Proyectos</a></span>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

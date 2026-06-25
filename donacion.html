@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donación — Dökker Mind Studios</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .page-hero{ padding:5.5rem 0 3rem; text-align:center; background:radial-gradient(ellipse 50% 40% at 50% 0%, rgba(255,90,31,.1), transparent 70%); }
+  .tier-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:2.5rem; }
+  @media (max-width:860px){ .tier-grid{ grid-template-columns:1fr; } }
+  .tier{ text-align:center; }
+  .tier .price{ font-family:var(--mono); font-size:2rem; color:var(--ember-hot); margin:.8rem 0; }
+  .tier ul{ list-style:none; margin:1.2rem 0; padding:0; font-size:.88rem; color:var(--parchment-d); text-align:left; }
+  .tier li{ padding:.4rem 0; border-bottom:1px solid rgba(255,90,31,.1); }
+  .tier li::before{ content:'⚒ '; color:var(--ember); }
+
+  .platform-row{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.2rem; margin-top:1.5rem; }
+  @media (max-width:760px){ .platform-row{ grid-template-columns:1fr; } }
+  .platform{ display:flex; align-items:center; justify-content:space-between; padding:1.3rem 1.5rem; }
+  .platform b{ font-family:var(--display); font-size:.9rem; letter-spacing:.05em; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <img src="assets/logo.png" alt="Dökker Mind Studios">
+      <span>Dökker Mind<br>Studios</span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="donacion.html" class="active">Donación</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero wrap">
+  <span class="eyebrow">Mantén el fuego encendido</span>
+  <h1>Apoya la forja</h1>
+  <p style="max-width:600px; margin:1.2rem auto 0; color:var(--parchment-d);">No hay editora detrás de Dökker Mind Studios. Cada aporte se convierte directamente en tiempo de desarrollo, herramientas y assets para Kara: Descent of the Berserker.</p>
+</header>
+
+<div class="seam"></div>
+
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow" style="display:block; text-align:center;">Niveles de apoyo</span>
+    <h2 style="text-align:center;">Elige tu forma de ayudar</h2>
+    <div class="tier-grid">
+      <div class="card tier">
+        <span class="tag">Aprendiz</span>
+        <div class="price">Libre</div>
+        <p style="color:var(--parchment-d); font-size:.9rem;">Cualquier monto ayuda. Cada moneda se siente.</p>
+        <ul>
+          <li>Tu nombre en los créditos de agradecimiento</li>
+          <li>Acceso a las actualizaciones de desarrollo</li>
+        </ul>
+      </div>
+      <div class="card tier" style="border-color:var(--ember);">
+        <span class="tag tag-live">Forjador</span>
+        <div class="price">Mensual</div>
+        <p style="color:var(--parchment-d); font-size:.9rem;">Apoyo recurrente para sostener el ritmo de producción.</p>
+        <ul>
+          <li>Acceso anticipado a builds internas</li>
+          <li>Notas de diseño detrás de cámaras</li>
+          <li>Tu nombre en los créditos del juego</li>
+        </ul>
+      </div>
+      <div class="card tier">
+        <span class="tag">Custodio del reino</span>
+        <div class="price">Único</div>
+        <p style="color:var(--parchment-d); font-size:.9rem;">Para quienes quieren dejar una marca duradera en el proyecto.</p>
+        <ul>
+          <li>Mención especial en créditos</li>
+          <li>Acceso al arte conceptual exclusivo</li>
+          <li>Agradecimiento personal del desarrollador</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="seam"></div>
+
+<section class="section section-tight">
+  <div class="wrap">
+    <span class="eyebrow">Plataformas</span>
+    <h2>Cómo donar</h2>
+    <p style="color:var(--parchment-d); margin-top:.8rem;">Mientras el estudio crece, las donaciones se gestionan a través de estas plataformas. Conéctalas a tu cuenta antes de publicar el sitio:</p>
+    <div class="platform-row">
+      <div class="card platform">
+        <b>Ko-fi</b>
+        <a href="https://ko-fi.com/" target="_blank" rel="noopener" class="btn btn-ghost" style="padding:.5rem 1rem; font-size:.7rem;">Configurar →</a>
+      </div>
+      <div class="card platform">
+        <b>Patreon</b>
+        <a href="https://www.patreon.com/" target="_blank" rel="noopener" class="btn btn-ghost" style="padding:.5rem 1rem; font-size:.7rem;">Configurar →</a>
+      </div>
+      <div class="card platform">
+        <b>PayPal</b>
+        <a href="https://www.paypal.com/" target="_blank" rel="noopener" class="btn btn-ghost" style="padding:.5rem 1rem; font-size:.7rem;">Configurar →</a>
+      </div>
+    </div>
+    <p style="font-family:var(--mono); font-size:.75rem; color:var(--ash); margin-top:1.5rem;">Nota: reemplaza estos enlaces por tus páginas reales de Ko-fi / Patreon / PayPal una vez creadas — son gratuitas y tardan minutos en configurarse.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© 2026 Dökker Mind Studios. Forjado en solitario.</span>
+    <span><a href="contacto.html">Contacto</a> · <a href="proyectos.html">Proyectos</a></span>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

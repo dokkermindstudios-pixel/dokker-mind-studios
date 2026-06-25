@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dökker Mind Studios — Forjado por un solo desarrollador</title>
+<meta name="description" content="Dökker Mind Studios: estudio independiente de un solo desarrollador, creador de Kara: Descent of the Berserker.">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .hero{
+    min-height:92vh; display:flex; align-items:center; position:relative;
+    background:radial-gradient(ellipse 60% 50% at 50% 28%, rgba(255,90,31,.12), transparent 70%);
+  }
+  .ember-field{ position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+  .ember-particle{
+    position:absolute; bottom:-10px; background:var(--ember-hot); border-radius:50%;
+    box-shadow:0 0 6px var(--ember-hot);
+    animation:rise linear infinite;
+  }
+  @keyframes rise{
+    0%{ transform:translateY(0) translateX(0); opacity:0; }
+    10%{ opacity:1; }
+    100%{ transform:translateY(-100vh) translateX(20px); opacity:0; }
+  }
+  .hero-grid{ display:grid; grid-template-columns: 1fr; gap:2.5rem; text-align:center; position:relative; z-index:2; width:100%; }
+  .hero-logo{ width:140px; height:140px; margin:0 auto 1rem; filter:drop-shadow(0 0 28px rgba(255,90,31,.5)); }
+  .hero h1{
+    font-size:clamp(2.1rem, 6vw, 3.6rem); line-height:1.08; max-width:780px; margin:0 auto;
+  }
+  .hero h1 em{ font-style:normal; color:var(--ember-hot); }
+  .hero p.lede{
+    font-family:var(--body); font-size:1.15rem; color:var(--parchment-d); max-width:600px; margin:1.3rem auto 0;
+  }
+  .hero-cta{ display:flex; gap:1rem; justify-content:center; margin-top:2.2rem; flex-wrap:wrap; }
+
+  .stat-row{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:rgba(255,90,31,.18); margin-top:4.5rem; }
+  .stat{ background:var(--void); padding:1.6rem 1rem; text-align:center; }
+  .stat b{ font-family:var(--mono); font-size:1.6rem; color:var(--ember-hot); display:block; }
+  .stat span{ font-family:var(--mono); font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ash); }
+  @media (max-width:640px){ .stat-row{ grid-template-columns:1fr; } }
+
+  .split{ display:grid; grid-template-columns:1.1fr .9fr; gap:3.5rem; align-items:center; }
+  @media (max-width:860px){ .split{ grid-template-columns:1fr; } }
+  .split img{ width:100%; border:1px solid rgba(255,90,31,.2); }
+
+  .project-card{ display:grid; grid-template-columns:1fr; gap:1.5rem; }
+  .project-meta{ display:flex; gap:.8rem; flex-wrap:wrap; margin:1rem 0 1.2rem; }
+
+  .triad{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:3rem; }
+  @media (max-width:780px){ .triad{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <img src="assets/logo.png" alt="Dökker Mind Studios">
+      <span>Dökker Mind<br>Studios</span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <div class="nav-links">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="donacion.html">Donación</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="ember-field"></div>
+  <div class="wrap hero-grid">
+    <img class="hero-logo" src="assets/logo.png" alt="">
+    <div>
+      <span class="eyebrow">Estudio de un solo desarrollador</span>
+      <h1 class="glow-text">Cada juego se forja <em>a solas</em>,<br>golpe a golpe.</h1>
+      <p class="lede">Dökker Mind Studios es el taller de un único desarrollador construyendo videojuegos con la misma obsesión con la que un herrero forja una hoja: con fuego, paciencia y código.</p>
+      <div class="hero-cta">
+        <a href="proyectos.html" class="btn btn-solid">Ver Kara: Descent of the Berserker</a>
+        <a href="sobre-mi.html" class="btn">Conocer al desarrollador</a>
+      </div>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat"><b>1</b><span>Desarrollador</span></div>
+      <div class="stat"><b>∞</b><span>Horas de forja</span></div>
+      <div class="stat"><b>01</b><span>Mundo en marcha</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="seam"></div>
+
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">Proyecto principal</span>
+      <h2>Kara: Descent of the Berserker</h2>
+      <p style="margin-top:1.2rem; color:var(--parchment-d);">Una guerrera nórdica desciende a un mundo de hielo, fuego y sombra para recuperar lo que la oscuridad le arrebató. Una historia sobre el duelo contado a través del combate, forjada en motor propio, sin estudio, sin equipo de marketing — solo un desarrollador que se niega a soltar el martillo.</p>
+      <div class="project-meta">
+        <span class="tag tag-live">En desarrollo</span>
+        <span class="tag">Unreal Engine 5</span>
+        <span class="tag">Acción · Grimdark Nórdico</span>
+      </div>
+      <a href="proyectos.html" class="btn">Seguir el progreso →</a>
+    </div>
+    <div class="card">
+      <span class="eyebrow">Bitácora de forja</span>
+      <p style="font-family:var(--mono); font-size:.85rem; color:var(--parchment-d); line-height:1.9;">
+        → GDD completo<br>
+        → Prólogo de diálogos escrito<br>
+        → Arte conceptual y mapa de los cinco reinos<br>
+        → Teaser publicado<br>
+        → Arquitectura C++ en construcción
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="seam"></div>
+
+<section class="section section-tight">
+  <div class="wrap">
+    <span class="eyebrow" style="text-align:center; display:block;">El taller</span>
+    <h2 style="text-align:center;">Tres oficios, un solo martillo</h2>
+    <div class="triad">
+      <div class="card">
+        <h3 style="font-size:1rem;">Diseño de mundos</h3>
+        <p style="color:var(--parchment-d); margin-top:.8rem; font-size:.95rem;">Cada reino, personaje y línea de diálogo nace de la misma cabeza que escribe el código que los hace funcionar.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;">Ingeniería en la nube</h3>
+        <p style="color:var(--parchment-d); margin-top:.8rem; font-size:.95rem;">Arquitecto de nube de profesión, programador por vocación. La disciplina de un sistema bien diseñado se nota también en un videojuego.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;">Sonido y atmósfera</h3>
+        <p style="color:var(--parchment-d); margin-top:.8rem; font-size:.95rem;">Dirección musical propia: paisajes sonoros ambientales nórdicos compuestos para que cada reino tenga su propio peso emocional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="seam"></div>
+
+<section class="section section-tight">
+  <div class="wrap" style="text-align:center;">
+    <span class="eyebrow">Ayuda a mantener el fuego</span>
+    <h2 style="max-width:680px; margin:0 auto;">Un desarrollador solo necesita aliados, no jefes.</h2>
+    <p style="color:var(--parchment-d); max-width:560px; margin:1.2rem auto 1.8rem;">Si esta historia te interesa, tu apoyo financia herramientas, assets y el tiempo necesario para seguir forjando sin tener que soltar el martillo a medio camino.</p>
+    <a href="donacion.html" class="btn btn-solid">Apoyar el proyecto</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© 2026 Dökker Mind Studios. Forjado en solitario.</span>
+    <span><a href="contacto.html">Contacto</a> · <a href="donacion.html">Donación</a></span>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
