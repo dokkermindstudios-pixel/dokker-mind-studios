@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>La Casa — Prototipo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="game-container">
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="hud">Prototipo · Dökker Mind Studios</div>
+
+  <!-- Start screen -->
+  <div id="start-screen" class="overlay">
+    <h1>La Casa</h1>
+    <p>Despiertas en una versión distorsionada de tu propia casa. La luz es tu refugio — en la oscuridad, algo te busca.<br><br>
+    PC: flechas / A-D para moverte, espacio para saltar, E para interactuar.<br>
+    Móvil: usa los botones en pantalla.</p>
+    <button id="start-btn">Comenzar</button>
+    <!-- Cross-promo a Kára (GDD §6). Reemplaza la URL por el enlace real de itch.io. -->
+    <a class="kara-banner" href="https://dokkermind.itch.io/kara" target="_blank" rel="noopener">
+      <span class="kara-tag">También de Dökker Mind Studios</span>
+      <span class="kara-title">Kára: Descent of the Berserker →</span>
+    </a>
+  </div>
+
+  <!-- Win screen -->
+  <div id="win-screen" class="overlay hidden">
+    <h1>Nivel completado</h1>
+    <p>Esto es solo un prototipo técnico — el primer paso del juego. La historia y los niveles reales vienen después.</p>
+    <button id="retry-btn">Reintentar</button>
+    <!-- Cross-promo a Kára (GDD §6). Reemplaza la URL por el enlace real de itch.io. -->
+    <a class="kara-banner" href="https://dokkermind.itch.io/kara" target="_blank" rel="noopener">
+      <span class="kara-tag">Mientras tanto, juega</span>
+      <span class="kara-title">Kára: Descent of the Berserker →</span>
+    </a>
+  </div>
+
+  <!-- Touch controls -->
+  <div id="touch-controls">
+    <div class="touch-zone">
+      <div class="touch-btn" id="btn-left">◀</div>
+      <div class="touch-btn" id="btn-right">▶</div>
+    </div>
+    <div class="touch-zone">
+      <div class="touch-btn" id="btn-action" style="font-size:.65rem;letter-spacing:.04em;text-transform:uppercase;">E</div>
+      <div class="touch-btn" id="btn-jump" style="width:76px;height:76px;font-size:.65rem;letter-spacing:.05em;text-transform:uppercase;">SALTAR</div>
+    </div>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
